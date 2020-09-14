@@ -1,6 +1,6 @@
 # EagleLib-ytani
 
-EAGLE Libraries
+EAGLE Libraries and some examples
 
 ## install
 
@@ -12,9 +12,15 @@ or
 $ git clone git@github.com:ytani01/EagleLib.git
 ```
 
-### 2. copy ``*.lbr`` files
+### 2. copy library files
 
-Distination Folder
+Source files: ``Libraries/*.lbr``
+
+Distination Folder:
 ```
 C:\Users\{username}\Documents\EAGLE\libraries\EagleLib-ytani
 ```
+
+## examples
+
+* [Raspberry Pi Zero HAT](RPi0-HAT1/)
