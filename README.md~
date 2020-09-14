@@ -12,7 +12,7 @@ or
 $ git clone git@github.com:ytani01/EagleLib.git
 ```
 
-### 2. copy ``*.lbr`` files
+### 2. copy *.lbr files
 
 Distination Folder
 ```
