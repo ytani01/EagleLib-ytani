@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -73,7 +73,7 @@
 </layers>
 <library>
 <packages>
-<package name="DC/DC_IN2V-24V_OUT5V-28V_2A">
+<package name="DC-DC_IN2V-24V_OUT5V-28V_2A">
 <pad name="VIN+" x="-13.25" y="7" drill="0.9" shape="long"/>
 <pad name="VIN-" x="-13.25" y="-7" drill="0.9" shape="long"/>
 <pad name="VOUT+" x="13.25" y="7" drill="0.9" shape="long"/>
@@ -125,10 +125,10 @@
 <wire x1="15.5" y1="-8.5" x2="-15.5" y2="-8.5" width="0.1524" layer="21"/>
 <wire x1="-15.5" y1="-8.5" x2="-15.5" y2="8.5" width="0.1524" layer="21"/>
 </package>
-<package name="DC/DC_5V_0.48A">
-<pad name="1" x="-2.54" y="3.81" drill="0.9" shape="square"/>
-<pad name="2" x="0" y="3.81" drill="0.9"/>
-<pad name="3" x="2.54" y="3.81" drill="0.9"/>
+<package name="DC-DC_5V_0.48A">
+<pad name="+5V" x="-2.54" y="3.81" drill="0.9" shape="square"/>
+<pad name="GND" x="0" y="3.81" drill="0.9"/>
+<pad name="VIN" x="2.54" y="3.81" drill="0.9"/>
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.1524" layer="21"/>
 <wire x1="5" y1="5" x2="5" y2="-5" width="0.1524" layer="21"/>
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.1524" layer="21"/>
@@ -142,10 +142,10 @@
 <text x="1.905" y="1.905" size="1.016" layer="51">VI</text>
 <text x="-0.635" y="1.905" size="1.016" layer="51">G</text>
 </package>
-<package name="DC/DC_5V_0.48A/REV">
-<pad name="1" x="2.54" y="3.81" drill="0.9" shape="square"/>
-<pad name="2" x="0" y="3.81" drill="0.9"/>
-<pad name="3" x="-2.54" y="3.81" drill="0.9"/>
+<package name="DC-DC_5V_0.48A/REV">
+<pad name="+5V" x="2.54" y="3.81" drill="0.9" shape="square"/>
+<pad name="GND" x="0" y="3.81" drill="0.9"/>
+<pad name="VIN" x="-2.54" y="3.81" drill="0.9"/>
 <wire x1="-5" y1="5" x2="5" y2="5" width="0.1524" layer="21"/>
 <wire x1="5" y1="5" x2="5" y2="-5" width="0.1524" layer="21"/>
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.1524" layer="21"/>
@@ -200,8 +200,8 @@
 <wire x1="0.762" y1="-2.286" x2="2.54" y2="-2.286" width="0.1524" layer="51"/>
 <wire x1="0.762" y1="0.508" x2="2.54" y2="0.508" width="0.1524" layer="51"/>
 <wire x1="0.762" y1="-3.048" x2="2.54" y2="-3.048" width="0.1524" layer="51"/>
-<text x="1.905" y="1.524" size="0.8128" layer="51">VI</text>
-<text x="-3.175" y="1.524" size="0.8128" layer="51">VO</text>
+<text x="-3.175" y="1.524" size="0.8128" layer="51">VI</text>
+<text x="1.905" y="1.524" size="0.8128" layer="51">VO</text>
 <text x="-0.508" y="1.524" size="0.8128" layer="51">G</text>
 </package>
 <package name="PAM8012MOD">
@@ -209,73 +209,105 @@
 <pad name="GND" x="-3.81" y="1.27" drill="0.9" shape="offset"/>
 <pad name="IN+" x="-3.81" y="-1.27" drill="0.9" shape="offset"/>
 <pad name="IN-" x="-3.81" y="-3.81" drill="0.9" shape="offset"/>
-<pad name="SP-1" x="3.81" y="-1.27" drill="0.9"/>
-<pad name="SP+1" x="3.81" y="1.27" drill="0.9"/>
-<pad name="SP+2" x="3.81" y="3.81" drill="0.9"/>
-<pad name="SP-2" x="3.81" y="-3.81" drill="0.9"/>
+<pad name="SP-@1" x="3.81" y="-1.27" drill="0.9"/>
+<pad name="SP+@1" x="3.81" y="1.27" drill="0.9" rot="R180"/>
+<pad name="SP+@2" x="3.81" y="3.81" drill="0.9"/>
+<pad name="SP-@2" x="3.81" y="-3.81" drill="0.9"/>
 <wire x1="-5" y1="5.5" x2="5" y2="5.5" width="0.127" layer="51"/>
 <wire x1="5" y1="5.5" x2="5" y2="-5.5" width="0.127" layer="51"/>
 <wire x1="5" y1="-5.5" x2="-5" y2="-5.5" width="0.127" layer="51"/>
 <wire x1="-5" y1="-5.5" x2="-5" y2="5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="0.762" x2="1.524" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0.762" x2="1.524" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="-0.762" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="0" y1="-0.762" x2="0" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="3.81" x2="2.032" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="3.81" x2="2.032" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="3.048" x2="0.508" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="3.048" x2="0.508" y2="3.81" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-1.27" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.524" x2="-0.254" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.524" x2="-0.254" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="2.032" x2="-1.27" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="1.524" x2="1.27" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="1.524" x2="1.27" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="2.032" x2="0.254" y2="2.032" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="2.032" x2="0.254" y2="1.524" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="-2.286" x2="0" y2="-2.286" width="0.1524" layer="51"/>
+<wire x1="0" y1="-2.286" x2="0" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="0" y1="-2.794" x2="-1.016" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="-2.794" x2="-1.016" y2="-2.286" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="-2.286" x2="1.778" y2="-2.286" width="0.1524" layer="51"/>
+<wire x1="1.778" y1="-2.286" x2="1.778" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="1.778" y1="-2.794" x2="0.762" y2="-2.794" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="-2.794" x2="0.762" y2="-2.286" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="-1.27" x2="0" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.778" x2="-1.016" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="-1.778" x2="-1.016" y2="-1.27" width="0.1524" layer="51"/>
 </package>
 </packages>
 <symbols>
-<symbol name="DC/DC_4PINS">
-<pin name="VIN+" x="-12.7" y="2.54" visible="pin" length="short" direction="in"/>
-<pin name="VOUT+" x="12.7" y="2.54" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="VIN-" x="-12.7" y="-2.54" visible="pin" length="short" direction="in"/>
-<pin name="VOUT-" x="12.7" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.588" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
-<text x="-3.81" y="0" size="1.778" layer="94">DC-DC</text>
+<symbol name="DC-DC_4P">
+<pin name="VIN+" x="-7.62" y="2.54" visible="pad" length="short" direction="pwr"/>
+<pin name="VOUT+" x="7.62" y="2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="VIN-" x="-7.62" y="-2.54" visible="pad" length="short" direction="pwr"/>
+<pin name="VOUT-" x="7.62" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.1524" layer="94"/>
+<text x="-4" y="-0.254" size="1.778" layer="94">DC-DC</text>
+<text x="5.3" y="1" size="1.4224" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="DC/DC_3PINS">
-<pin name="VIN" x="5.08" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="GND" x="5.08" y="0" visible="pin" length="short" direction="sup" rot="R180"/>
-<pin name="+5V" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<text x="-7.62" y="8.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="6.04" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="DC-DC_3P">
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VOUT" x="7.62" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="VIN" x="-7.62" y="0" visible="pad" length="short" direction="pwr"/>
+<pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
+<text x="-4" y="0" size="1.778" layer="94">DC-DC</text>
 </symbol>
 <symbol name="PAM8012MOD">
-<pin name="VCC" x="-10.16" y="3.81" visible="pin" length="short"/>
-<pin name="GND" x="-10.16" y="1.27" visible="pin" length="short"/>
-<pin name="IN+" x="-10.16" y="-1.27" visible="pin" length="short"/>
-<pin name="IN-" x="-10.16" y="-3.81" visible="pin" length="short"/>
-<pin name="SP+" x="10.16" y="1.27" visible="pin" length="short" rot="R180"/>
-<pin name="SP-" x="10.16" y="-1.27" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-10.16" y="3.81" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="1.27" visible="pin" length="short" direction="pwr"/>
+<pin name="IN+" x="-10.16" y="-1.27" visible="pin" length="short" direction="in"/>
+<pin name="IN-" x="-10.16" y="-3.81" visible="pin" length="short" direction="in"/>
+<pin name="SP+" x="10.16" y="1.27" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SP-" x="10.16" y="-1.27" visible="pin" length="short" direction="out" rot="R180"/>
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.254" layer="94"/>
 <wire x1="7.62" y1="6.35" x2="7.62" y2="-6.35" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-6.35" x2="-7.62" y2="-6.35" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-6.35" x2="-7.62" y2="6.35" width="0.254" layer="94"/>
-<text x="-7.62" y="8.89" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="6.858" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DC/DC_IN:2V-24V_OUT:5V-28V_2A" prefix="DCDC">
-<description>Step-Up DC/DC converter
+<deviceset name="DC-DC_IN:2V-24V_OUT:5V-28V_2A" prefix="DCDC" uservalue="yes">
+<description>&lt;strong&gt;Step-Up DC/DC converter&lt;/strong&gt;
+&lt;p&gt;
+&lt;a href="https://www.amazon.co.jp/gp/product/B01D0WSBGY/"&gt;https://www.amazon.co.jp/gp/product/B01D0WSBGY/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
 &lt;table&gt;
 &lt;tr&gt;
 &lt;td&gt;In&lt;/td&gt;&lt;td&gt;2V-24V&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Out&lt;/td&gt;&lt;td&gt;5V-28V&lt;/td&gt;
+&lt;td&gt;Out&lt;/td&gt;&lt;td&gt;5V-28V = &lt;strong&gt;[VALUE]&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
-Max: 2A (1A推奨)</description>
+Max: 2A (1A recomended)
+&lt;/p;&gt;</description>
 <gates>
-<gate name="G$1" symbol="DC/DC_4PINS" x="0" y="0"/>
+<gate name="G$1" symbol="DC-DC_4P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DC/DC_IN2V-24V_OUT5V-28V_2A">
+<device name="" package="DC-DC_IN2V-24V_OUT5V-28V_2A">
 <connects>
 <connect gate="G$1" pin="VIN+" pad="VIN+"/>
 <connect gate="G$1" pin="VIN-" pad="VIN-"/>
@@ -283,50 +315,65 @@ Max: 2A (1A推奨)</description>
 <connect gate="G$1" pin="VOUT-" pad="VOUT-"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DC/DC_OUT:5V_0.48A" prefix="DC/DC">
-<gates>
-<gate name="G$1" symbol="DC/DC_3PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DC/DC_5V_0.48A">
-<connects>
-<connect gate="G$1" pin="+5V" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-</connects>
-<technologies>
 <technology name="">
-<attribute name="VOUT" value="5V" constant="no"/>
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B01D0WSBGY/" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DC/DC_OUT:5V_0.48A/REV" prefix="DC/DC">
+<deviceset name="DC-DC_OUT:5V_0.48A" prefix="DCDC" uservalue="yes">
+<description>&lt;strong&gt;DC-DC step up converter T64&lt;/strong&gt;
+&lt;p&gt;
+&lt;a href="https://www.amazon.co.jp/gp/product/B07N8TBJB3/"&gt;https://www.amazon.co.jp/gp/product/B07N8TBJB3/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Vin: 0.9V-5V&lt;br /&gt;
+Vout: 5V&lt;br /&gt;
+&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="DC/DC_3PINS" x="0" y="0"/>
+<gate name="G$1" symbol="DC-DC_3P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DC/DC_5V_0.48A/REV">
+<device name="" package="DC-DC_5V_0.48A">
 <connects>
-<connect gate="G$1" pin="+5V" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="+5V"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="REV" package="DC-DC_5V_0.48A/REV">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="+5V"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PAM8012MOD" prefix="AMP">
-<description>&lt;h3&gt;PAM8012使用2W D級アンプモジュール&lt;/h3&gt;
-超小型ながら最大2ワットの出力が可能なD級アンプモジュールです。ピン取り付け穴が長穴加工となっていますので、電線のハンダ付けがし易くなっています。差動入力型ですが、IN-をGNDに接続することでシングルエンド入力としても使用できます。</description>
+<description>&lt;strong&gt;PAM8012使用2W D級アンプモジュール&lt;/strong&gt;
+&lt;p&gt;
+&lt;a href="https://akizukidenshi.com/catalog/g/gK-08217/"&gt;https://akizukidenshi.com/catalog/g/gK-08217/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Vin: 2.5V-5.5V&lt;br /&gt;
+8ohm: 1W&lt;br /&gt;
+4ohm: 2W&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+IN-をGNDに接続することでシングルエンド入力としても使用できます。
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="PAM8012MOD" x="0" y="0"/>
 </gates>
@@ -336,13 +383,15 @@ Max: 2A (1A推奨)</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="IN+" pad="IN+"/>
 <connect gate="G$1" pin="IN-" pad="IN-"/>
-<connect gate="G$1" pin="SP+" pad="SP+1 SP+2"/>
-<connect gate="G$1" pin="SP-" pad="SP-1 SP-2"/>
+<connect gate="G$1" pin="SP+" pad="SP+@1 SP+@2"/>
+<connect gate="G$1" pin="SP-" pad="SP-@1 SP-@2"/>
 <connect gate="G$1" pin="VCC" pad="V+"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="VCC" value="2.5V-5.5V" constant="no"/>
+<attribute name="CHIP1" value="PAM8012" constant="no"/>
+<attribute name="OC_AKIZUKI" value="AE-PAM8012" constant="no"/>
+<attribute name="URL_AKIZUKI" value="https://akizukidenshi.com/catalog/g/gK-08217/" constant="no"/>
 </technology>
 </technologies>
 </device>
