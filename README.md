@@ -43,7 +43,7 @@ lib/*
 ### 4. Update on Eagle
 
 1. [Control Panel]-[Libraries]-[libraries]-[ytani]-[*.lbr]
-2. Right-click
+2. Right-click menu
 3. [Update]
 
 
