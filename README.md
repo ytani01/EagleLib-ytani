@@ -24,4 +24,4 @@ C:\Users\{username}\Documents\EAGLE\libraries\EagleLib-ytani
 ```
 
 
-## [examples](examples/)
+## [examples](example/)
