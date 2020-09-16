@@ -1,8 +1,16 @@
 ![ytani1.lbr](doc/ytani1.lbr.png)
 
-# EagleLib-ytani
+# EagleLib-ytani -- EAGLE Libraries and some examples
 
-EAGLE Libraries and some examples
+既製品のモジュール基板を使う場合など、
+Eagleライブラリに部品がなく、
+探しても見つからなかったり、
+見つかってもどうもしっくりこないものが多く、
+歯がゆい思いをしてたので、自分が使いやすいパーツライブラリを作ることにしました。
+* Amazonなどのリンク情報も入れました。
+* 秋月電子の通販コードも入れました。
+* 裏返しで使うことがあるものは、裏のパターンも作りました。
+まだまだ、少ないですが、徐々に増やしていきたいと思います。
 
 ## INSTALL Library files
 
