@@ -54,4 +54,5 @@ lib/*
 ## [examples](example/)
 
 * [Raspberry Pi Zero HAT](example/RPi0-HAT1/)
-* [Raspberry Pi Zero Power Module](example/RPi0PWR/)
+* [Raspberry Pi Zero Power Module 1](example/RPi0PWR1/)
+* [Raspberry Pi Zero Power Module 2](example/RPi0PWR2/)
