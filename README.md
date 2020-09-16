@@ -1,5 +1,3 @@
-![ytani1.lbr](doc/ytani1.lbr.png)
-
 # EagleLib-ytani -- EAGLE Libraries and some examples
 
 既製品のモジュール基板を使う場合、
@@ -13,6 +11,8 @@ Eagleライブラリに部品がなく、
 * 裏返しで使うことがあるものは、裏のパターンも作りました。
 
 まだまだ、少ないですが、徐々に増やしていきたいと思います。
+
+![ytani1.lbr](doc/ytani1.lbr.png)
 
 ## INSTALL Library files
 
