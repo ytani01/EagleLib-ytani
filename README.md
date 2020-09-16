@@ -35,7 +35,7 @@ C:\Users\{username}\Documents\EAGLE\libraries\ytani
 
 ### 3. Copy library files to destination folder
 
-Source files: ``[lib](lib/)/*``
+Source files: [lib](lib/)/*
 
 
 ## [Libraries](lib/)
