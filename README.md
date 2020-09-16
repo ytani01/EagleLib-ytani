@@ -14,7 +14,7 @@ Eagleライブラリに部品がなく、
 
 ![ytani1.lbr](doc/ytani1.lbr.png)
 
-## INSTALL Library files
+## Install Library files
 
 ### 1. Clone git repository
 
@@ -26,14 +26,17 @@ or
 $ git clone git@github.com:ytani01/EagleLib.git
 ```
 
-### 2. Copy library files
+### 2. Make destination folder
+
+Destination Folder:
+```
+C:\Users\{username}\Documents\EAGLE\libraries\ytani
+```
+
+### 3. Copy library files to destination folder
 
 Source files: ``Libraries/*.lbr``
 
-Distination Folder:
-```
-C:\Users\{username}\Documents\EAGLE\libraries\EagleLib-ytani
-```
 
 ## [Libraries](lib/)
 
