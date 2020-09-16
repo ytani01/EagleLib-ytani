@@ -23,5 +23,11 @@ Distination Folder:
 C:\Users\{username}\Documents\EAGLE\libraries\EagleLib-ytani
 ```
 
+## [Libraries](lib/)
+
+* ytani1.lbr
 
 ## [examples](example/)
+
+* [Raspberry Pi Zero HAT](example/RPi0-HAT1/)
+* [Raspberry Pi Zero Power Module](example/RPi0PWR/)
