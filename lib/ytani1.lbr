@@ -72,9 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;h3&gt;ytani1.lbr&lt;/h3&gt;
-
-git repo: &lt;tt&gt;https://www.github.com/ytani01/EagleLib-ytani/&lt;/tt&gt;</description>
+<description>&lt;a href="https://github.com/ytani01/EagleLib-ytani/"&gt;https://github.com/ytani01/EagleLib-ytani/&lt;/a&gt;</description>
 <packages>
 <package name="DCDC-5V_28V-2A">
 <pad name="VIN+" x="-13.25" y="7" drill="0.9" shape="long"/>
