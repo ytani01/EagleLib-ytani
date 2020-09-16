@@ -1,3 +1,5 @@
+![ytani1.lbr](doc/ytani1.lbr.png)
+
 # EagleLib-ytani
 
 EAGLE Libraries and some examples
