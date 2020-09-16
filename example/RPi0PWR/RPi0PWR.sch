@@ -75,7 +75,47 @@
 <libraries>
 <library name="ytani1">
 <packages>
-<package name="DC-DC_5V_0.48A">
+<package name="JST-PH2">
+<wire x1="-2.95" y1="-1.7" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.7" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.7" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="2.8" x2="2.95" y2="2.8" width="0.127" layer="21"/>
+<wire x1="2.95" y1="2.8" x2="2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.95" y1="0.6" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-0.3" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="2.8" x2="-2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="0.6" x2="-2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-0.3" x2="-2.95" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.2" x2="2.35" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="2.2" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="0.6" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-0.3" x2="-2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-2.35" y1="-1.1" x2="-0.4" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="2.35" y1="2.2" x2="2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="0.6" x2="2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.3" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-0.3" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="0.6" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="0.6" x2="2.95" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.35" y1="-0.3" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.1" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.1" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1.1" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
+<pad name="1" x="-1" y="0" drill="0.8128" diameter="1.6764" shape="square"/>
+<pad name="2" x="1" y="0" drill="0.8128" diameter="1.6764"/>
+<text x="-3" y="3.5001" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="SW3-1">
+<pad name="1" x="-2.54" y="0" drill="0.9" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.9"/>
+<pad name="3" x="2.54" y="0" drill="0.9"/>
+<wire x1="-4.8" y1="2.3" x2="-4.8" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-4.8" y1="-2.3" x2="4.8" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="4.8" y1="-2.3" x2="4.8" y2="2.3" width="0.1524" layer="21"/>
+<wire x1="4.8" y1="2.3" x2="-4.8" y2="2.3" width="0.1524" layer="21"/>
+<text x="-5.08" y="2.54" size="1.778" layer="25">&gt;NAME</text>
+</package>
+<package name="DCDC-5V-0.48A">
 <pad name="+5V" x="-2.54" y="3.81" drill="0.9" shape="square"/>
 <pad name="GND" x="0" y="3.81" drill="0.9"/>
 <pad name="VIN" x="2.54" y="3.81" drill="0.9"/>
@@ -91,8 +131,9 @@
 <text x="-3.429" y="1.905" size="1.016" layer="51">VO</text>
 <text x="1.905" y="1.905" size="1.016" layer="51">VI</text>
 <text x="-0.635" y="1.905" size="1.016" layer="51">G</text>
+<text x="-5.08" y="6.35" size="1.778" layer="25">&gt;NAME</text>
 </package>
-<package name="DC-DC_5V_0.48A/REV">
+<package name="DCDC-5V-0.48A/REV">
 <pad name="+5V" x="2.54" y="3.81" drill="0.9" shape="square"/>
 <pad name="GND" x="0" y="3.81" drill="0.9"/>
 <pad name="VIN" x="-2.54" y="3.81" drill="0.9"/>
@@ -153,19 +194,33 @@
 <text x="-3.175" y="1.524" size="0.8128" layer="51">VI</text>
 <text x="1.905" y="1.524" size="0.8128" layer="51">VO</text>
 <text x="-0.508" y="1.524" size="0.8128" layer="51">G</text>
-</package>
-<package name="SW3-1">
-<pad name="1" x="-2.54" y="0" drill="0.9"/>
-<pad name="2" x="0" y="0" drill="0.9"/>
-<pad name="3" x="2.54" y="0" drill="0.9"/>
-<wire x1="-4.8" y1="2.3" x2="-4.8" y2="-2.3" width="0.1524" layer="21"/>
-<wire x1="-4.8" y1="-2.3" x2="4.8" y2="-2.3" width="0.1524" layer="21"/>
-<wire x1="4.8" y1="-2.3" x2="4.8" y2="2.3" width="0.1524" layer="21"/>
-<wire x1="4.8" y1="2.3" x2="-4.8" y2="2.3" width="0.1524" layer="21"/>
+<text x="-5.08" y="6.35" size="1.778" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
-<symbol name="DC-DC_3P">
+<symbol name="CON02">
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="SW03">
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<circle x="0" y="-1.27" radius="0.1" width="0.508" layer="94"/>
+<circle x="0" y="1.27" radius="0.1" width="0.508" layer="94"/>
+<circle x="2.54" y="0" radius="0.1" width="0.508" layer="94"/>
+<wire x1="2.54" y1="0" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<text x="1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="DCDC03">
 <wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
@@ -176,65 +231,34 @@
 <pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
 <text x="-4" y="0" size="1.778" layer="94">DC-DC</text>
 </symbol>
-<symbol name="SW3">
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="point"/>
-<pin name="2" x="2.54" y="0" visible="pad" length="point" rot="R180"/>
-<pin name="3" x="-2.54" y="-2.54" visible="pad" length="point"/>
-<circle x="-2.54" y="-1.27" radius="0.1" width="0.508" layer="94"/>
-<circle x="-2.54" y="1.27" radius="0.1" width="0.508" layer="94"/>
-<circle x="1.27" y="0" radius="0.1" width="0.508" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.2" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.2" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="-3.81" y2="-1.27" width="0.1524" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="DC-DC_OUT:5V_0.48A" prefix="DCDC" uservalue="yes">
-<description>&lt;strong&gt;DC-DC step up converter T64&lt;/strong&gt;
-&lt;p&gt;
-&lt;a href="https://www.amazon.co.jp/gp/product/B07N8TBJB3/"&gt;https://www.amazon.co.jp/gp/product/B07N8TBJB3/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Vin: 0.9V-5V&lt;br /&gt;
-Vout: 5V&lt;br /&gt;
-&lt;/p&gt;</description>
+<deviceset name="JST-PH2" prefix="P" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="DC-DC_3P" x="0" y="0"/>
+<gate name="G$1" symbol="CON02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DC-DC_5V_0.48A">
+<device name="" package="JST-PH2">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-<connect gate="G$1" pin="VOUT" pad="+5V"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="REV" package="DC-DC_5V_0.48A/REV">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-<connect gate="G$1" pin="VOUT" pad="+5V"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SW3-1" prefix="SW">
-<description>&lt;strong&gt;Switch 3x1 pin&lt;/strong&gt;
+<deviceset name="SW3-1" prefix="SW" uservalue="yes">
+<description>&lt;strong&gt;Slide Switch 3x1 pin &lt;/strong&gt;
 &lt;p&gt;
+&lt;a href="https://www.amazon.co.jp/gp/product/B01LYVYQNO/"&gt;https://www.amazon.co.jp/gp/product/B01LYVYQNO/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+SS12D00G3 2ポジションSPDT 1P2T 3ピン
 &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SW3" x="0" y="0"/>
+<gate name="G$1" symbol="SW03" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SW3-1">
@@ -244,7 +268,49 @@ Vout: 5V&lt;br /&gt;
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MF" value="HiLetgo" constant="no"/>
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B01LYVYQNO/" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCDC-5V-0.48A" prefix="DCDC" uservalue="yes">
+<description>&lt;strong&gt;DC-DC step up converter T64&lt;/strong&gt;
+&lt;p&gt;
+&lt;a href="https://www.amazon.co.jp/gp/product/B07N8TBJB3/"&gt;https://www.amazon.co.jp/gp/product/B07N8TBJB3/&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Vin: 0.9V-5V&lt;br /&gt;
+Vout: 5V&lt;br /&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DCDC03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCDC-5V-0.48A">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="+5V"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="REV" package="DCDC-5V-0.48A/REV">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="+5V"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL_AMAZON" value="https://www.amazon.co.jp/gp/product/B07N8TBJB3/" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6767,71 +6833,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="jst-ph">
-<packages>
-<package name="JST-PH2">
-<wire x1="-2.95" y1="-1.7" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-0.4" y1="-1.7" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-1.7" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="2.8" x2="2.95" y2="2.8" width="0.127" layer="21"/>
-<wire x1="2.95" y1="2.8" x2="2.95" y2="0.6" width="0.127" layer="21"/>
-<wire x1="2.95" y1="0.6" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="2.95" y1="-0.3" x2="2.95" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="2.8" x2="-2.95" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="0.6" x2="-2.95" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="-0.3" x2="-2.95" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="2.2" x2="2.35" y2="2.2" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="2.2" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="0.6" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="-0.3" x2="-2.35" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="-1.1" x2="-0.4" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="2.35" y1="2.2" x2="2.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="2.35" y1="0.6" x2="2.35" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="2.35" y1="-0.3" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="-0.3" x2="-2.35" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="-2.95" y1="0.6" x2="-2.35" y2="0.6" width="0.127" layer="21"/>
-<wire x1="2.35" y1="0.6" x2="2.95" y2="0.6" width="0.127" layer="21"/>
-<wire x1="2.35" y1="-0.3" x2="2.95" y2="-0.3" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-1.1" x2="2.35" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-1.1" x2="0.4" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-0.4" y1="-1.1" x2="-0.4" y2="-1.7" width="0.127" layer="21"/>
-<pad name="2" x="-1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="1" x="1" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="-3" y="3.5001" size="1.27" layer="25">&gt;NAME</text>
-<text x="0.9001" y="-3.4999" size="1.27" layer="21">1</text>
-</package>
-</packages>
-<symbols>
-<symbol name="CON02">
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JST-PH2" prefix="P" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="CON02" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JST-PH2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
@@ -6883,28 +6884,25 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="DCDC1" library="ytani1" deviceset="DC-DC_OUT:5V_0.48A" device="" value="+5V"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1M"/>
 <part name="LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
-<part name="IN" library="jst-ph" deviceset="JST-PH2" device=""/>
-<part name="OUT" library="jst-ph" deviceset="JST-PH2" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SW1" library="ytani1" deviceset="SW3-1" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5L-LOC" device=""/>
+<part name="BAT" library="ytani1" deviceset="JST-PH2" device=""/>
+<part name="OUT" library="ytani1" deviceset="JST-PH2" device=""/>
+<part name="SW1" library="ytani1" deviceset="SW3-1" device=""/>
+<part name="DCDC1" library="ytani1" deviceset="DCDC-5V-0.48A" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="DCDC1" gate="G$1" x="43.18" y="33.02" smashed="yes">
-<attribute name="NAME" x="38.1" y="36.83" size="1.778" layer="95"/>
-</instance>
-<instance part="GND1" gate="1" x="17.78" y="7.62" smashed="yes">
-<attribute name="VALUE" x="15.24" y="5.08" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="20.32" y="7.62" smashed="yes">
+<attribute name="VALUE" x="17.78" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="33.02" y="7.62" smashed="yes">
 <attribute name="VALUE" x="30.48" y="5.08" size="1.778" layer="96"/>
@@ -6917,25 +6915,30 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="36.576" y="11.938" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="38.735" y="11.938" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IN" gate="G$1" x="7.62" y="40.64" smashed="yes">
-<attribute name="NAME" x="5.08" y="43.942" size="1.778" layer="95"/>
-<attribute name="VALUE" x="5.08" y="33.274" size="1.778" layer="96"/>
-</instance>
-<instance part="OUT" gate="G$1" x="60.96" y="30.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.88" y="36.322" size="1.778" layer="95"/>
-<attribute name="VALUE" x="63.5" y="37.846" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND3" gate="1" x="43.18" y="7.62" smashed="yes">
 <attribute name="VALUE" x="40.64" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="50.8" y="7.62" smashed="yes">
 <attribute name="VALUE" x="48.26" y="5.08" size="1.778" layer="96"/>
 </instance>
-<instance part="SW1" gate="G$1" x="25.4" y="33.02" smashed="yes"/>
 <instance part="FRAME1" gate="G$1" x="-58.42" y="-41.91" smashed="yes">
 <attribute name="DRAWING_NAME" x="82.55" y="-26.67" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="82.55" y="-31.75" size="2.286" layer="94"/>
 <attribute name="SHEET" x="95.885" y="-36.83" size="2.54" layer="94"/>
+</instance>
+<instance part="BAT" gate="G$1" x="12.7" y="40.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="17.78" y="37.338" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="17.78" y="48.006" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="OUT" gate="G$1" x="58.42" y="33.02" smashed="yes">
+<attribute name="NAME" x="53.34" y="36.322" size="1.778" layer="95"/>
+<attribute name="VALUE" x="53.34" y="25.654" size="1.778" layer="96"/>
+</instance>
+<instance part="SW1" gate="G$1" x="22.86" y="33.02" smashed="yes">
+<attribute name="NAME" x="24.13" y="35.56" size="1.778" layer="95"/>
+</instance>
+<instance part="DCDC1" gate="G$1" x="43.18" y="33.02" smashed="yes">
+<attribute name="NAME" x="38.1" y="36.83" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -6948,21 +6951,21 @@ Source: www.kingbright.com</description>
 <wire x1="33.02" y1="11.43" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DCDC1" gate="G$1" pin="GND"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="43.18" y1="27.94" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IN" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="17.78" y1="40.64" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="43.18" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="BAT" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="OUT" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="50.8" y1="30.48" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="OUT" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="DCDC1" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="LED+" class="0">
@@ -6975,33 +6978,33 @@ Source: www.kingbright.com</description>
 <net name="BAT+" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="25.4" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="3"/>
+<wire x1="22.86" y1="27.94" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="30.48" y="33.02"/>
 <pinref part="DCDC1" gate="G$1" pin="VIN"/>
 <wire x1="35.56" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 <junction x="33.02" y="33.02"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
-<pinref part="SW1" gate="G$1" pin="3"/>
-<wire x1="22.86" y1="30.48" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="27.94" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<junction x="30.48" y="33.02"/>
 </segment>
 </net>
-<net name="BAT+0" class="0">
+<net name="N$2" class="0">
 <segment>
-<pinref part="IN" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="BAT" gate="G$1" pin="1"/>
 <pinref part="SW1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="38.1" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="DCDC1" gate="G$1" pin="VOUT"/>
-<pinref part="OUT" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="OUT" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="33.02" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
