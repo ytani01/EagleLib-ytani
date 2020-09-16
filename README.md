@@ -24,6 +24,4 @@ C:\Users\{username}\Documents\EAGLE\libraries\EagleLib-ytani
 ```
 
 
-## examples
-
-* [Raspberry Pi Zero HAT](RPi0-HAT1/)
+## [examples](examples/)

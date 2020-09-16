@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -295,20 +295,20 @@
 <text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SW3">
-<pin name="1" x="-1.27" y="2.54" visible="pad" length="point"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="point" rot="R180"/>
-<pin name="3" x="-1.27" y="-2.54" visible="pad" length="point"/>
-<circle x="-1.27" y="-1.27" radius="0.1" width="0.508" layer="94"/>
-<circle x="-1.27" y="1.27" radius="0.1" width="0.508" layer="94"/>
-<circle x="3.81" y="0" radius="0.1" width="0.508" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.27" width="0.2" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-1.27" width="0.2" layer="94"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.2" layer="94"/>
-<wire x1="3.81" y1="0" x2="-2.54" y2="-1.27" width="0.2" layer="94"/>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="point"/>
+<pin name="2" x="2.54" y="0" visible="pad" length="point" rot="R180"/>
+<pin name="3" x="-2.54" y="-2.54" visible="pad" length="point"/>
+<circle x="-2.54" y="-1.27" radius="0.1" width="0.508" layer="94"/>
+<circle x="-2.54" y="1.27" radius="0.1" width="0.508" layer="94"/>
+<circle x="1.27" y="0" radius="0.1" width="0.508" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.2" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.2" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="-3.81" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DC-DC_IN:2V-24V_OUT:5V-28V_2A" prefix="DCDC" uservalue="yes">
+<deviceset name="DC-DC_IN2V-24V_OUT5V-28V_2A" prefix="DCDC" uservalue="yes">
 <description>&lt;strong&gt;Step-Up DC/DC converter&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/gp/product/B01D0WSBGY/"&gt;https://www.amazon.co.jp/gp/product/B01D0WSBGY/&lt;/a&gt;
@@ -343,7 +343,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="DC-DC_OUT:5V_0.48A" prefix="DCDC" uservalue="yes">
+<deviceset name="DC-DC_OUT5V_0.48A" prefix="DCDC" uservalue="yes">
 <description>&lt;strong&gt;DC-DC step up converter T64&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/gp/product/B07N8TBJB3/"&gt;https://www.amazon.co.jp/gp/product/B07N8TBJB3/&lt;/a&gt;
