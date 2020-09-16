@@ -1,13 +1,1 @@
-<h3>1. Clone(download) git repository</h3>
-
-Repository URL: <tt>https://github.com/ytani01/EagleLib-ytani.git</tt>
-
-<h3>2. Make destination folder</h3>
-
-Destination folder:
-<tt>C:\Users\{username}\Documents\EAGLE\libraries\ytani</tt>
-
-<h3>3. Copy files</h3>
-
-copy <strong><tt>lib/*</tt></strong> files to destination folder.
-
+https://github.com/ytani01/EagleLib-ytani.git
