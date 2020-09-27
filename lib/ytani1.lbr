@@ -75,10 +75,10 @@
 <description>&lt;a href="https://github.com/ytani01/EagleLib-ytani/"&gt;https://github.com/ytani01/EagleLib-ytani/&lt;/a&gt;</description>
 <packages>
 <package name="DCDC-5V_28V-2A">
-<pad name="VIN+" x="-13.25" y="7" drill="0.9" diameter="1.5" shape="long"/>
-<pad name="VIN-" x="-13.25" y="-7" drill="0.9" diameter="1.5" shape="long"/>
-<pad name="VOUT+" x="13.25" y="7" drill="0.9" diameter="1.5" shape="long"/>
-<pad name="VOUT-" x="13.25" y="-7" drill="0.9" diameter="1.5" shape="long"/>
+<pad name="VIN+" x="-13.25" y="7" drill="0.9" diameter="1.7"/>
+<pad name="VIN-" x="-13.25" y="-7" drill="0.9" diameter="1.7"/>
+<pad name="VOUT+" x="13.25" y="7" drill="0.9" diameter="1.7"/>
+<pad name="VOUT-" x="13.25" y="-7" drill="0.9" diameter="1.7"/>
 <wire x1="-15.4" y1="4.318" x2="-15" y2="4" width="0.1524" layer="21"/>
 <wire x1="-15" y1="4" x2="-10" y2="4" width="0.1524" layer="21"/>
 <wire x1="-10" y1="4" x2="-10" y2="-4" width="0.1524" layer="21"/>
