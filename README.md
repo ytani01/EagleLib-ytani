@@ -51,6 +51,26 @@ lib/*
 
 * ytani1.lbr
 
+## How To
+
+### common
+
+#### Grid
+
+Size: 1.27 mm
+Multiple: 2
+
+
+### Footprint
+
+
+### Symbol
+
+
+### Device
+
+
+
 ## Apendix.
 
 ### A.1 [examples](example/)
