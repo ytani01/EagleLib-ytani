@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1013,6 +1013,41 @@
 <wire x1="6.35" y1="-16.51" x2="6.35" y2="-17.145" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-12.7" x2="6.35" y2="-13.335" width="0.127" layer="21"/>
 </package>
+<package name="TP4056MOD2-TYPE-C">
+<wire x1="-14" y1="-8.5" x2="-14" y2="8.5" width="0.0762" layer="21"/>
+<wire x1="-14" y1="8.5" x2="14" y2="8.5" width="0.0762" layer="21"/>
+<wire x1="14" y1="8.5" x2="14" y2="-8.5" width="0.0762" layer="21"/>
+<wire x1="14" y1="-8.5" x2="-14" y2="-8.5" width="0.0762" layer="21"/>
+<wire x1="-4" y1="0.5" x2="-4" y2="-3.5" width="0.0762" layer="21"/>
+<wire x1="-4" y1="-3.5" x2="1" y2="-3.5" width="0.0762" layer="21"/>
+<wire x1="1" y1="-3.5" x2="1" y2="0.5" width="0.0762" layer="21"/>
+<wire x1="1" y1="0.5" x2="-4" y2="0.5" width="0.0762" layer="21"/>
+<wire x1="5" y1="-0.5" x2="5" y2="-4.5" width="0.0762" layer="21"/>
+<wire x1="5" y1="-4.5" x2="8" y2="-4.5" width="0.0762" layer="21"/>
+<wire x1="8" y1="-4.5" x2="8" y2="-0.5" width="0.0762" layer="21"/>
+<wire x1="8" y1="-0.5" x2="5" y2="-0.5" width="0.0762" layer="21"/>
+<wire x1="5" y1="4" x2="8" y2="4" width="0.0762" layer="21"/>
+<wire x1="8" y1="4" x2="8" y2="2.5" width="0.0762" layer="21"/>
+<wire x1="8" y1="2.5" x2="5" y2="2.5" width="0.0762" layer="21"/>
+<wire x1="5" y1="2.5" x2="5" y2="4" width="0.0762" layer="21"/>
+<pad name="BAT+" x="11" y="3.65" drill="1" diameter="1.7"/>
+<pad name="BAT-" x="11" y="-3.65" drill="1" diameter="1.7"/>
+<pad name="OUT+" x="11" y="6.9" drill="1" diameter="1.7"/>
+<pad name="OUT-" x="11" y="-6.9" drill="1" diameter="1.7"/>
+<pad name="IN+" x="-12" y="6.9" drill="1" diameter="1.7"/>
+<pad name="IN-" x="-12" y="-6.9" drill="1" diameter="1.7"/>
+<text x="-12.7" y="8.89" size="1.27" layer="25">&gt;NAME</text>
+<text x="1.27" y="8.89" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="13.97" y1="6.5" x2="13.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="13.5" y1="6.5" x2="12.5" y2="5.5" width="0.127" layer="21" curve="90"/>
+<wire x1="12.5" y1="5.5" x2="12.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="12.5" y1="-5.5" x2="13.5" y2="-6.5" width="0.127" layer="21" curve="90"/>
+<wire x1="13.5" y1="-6.5" x2="13.97" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-15.5" y1="4.5" x2="-8" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="4.5" x2="-8" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="-4.5" x2="-15.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-15.5" y1="-4.5" x2="-15.5" y2="4.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DCDC-MT3608-MOD2-USB" urn="urn:adsk.eagle:package:23610144/1" type="box">
@@ -1424,6 +1459,20 @@
 <wire x1="11.43" y1="24.13" x2="11.43" y2="-24.13" width="0.254" layer="94"/>
 <wire x1="11.43" y1="-24.13" x2="-11.43" y2="-24.13" width="0.254" layer="94"/>
 <wire x1="-11.43" y1="-24.13" x2="-11.43" y2="24.13" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TP4056MOD2-TYPE-C">
+<pin name="IN+" x="-10.16" y="-2.54" visible="pin" length="short" direction="pas"/>
+<pin name="IN-" x="-10.16" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="OUT+" x="10.16" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="OUT-" x="10.16" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="BAT+" x="10.16" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="BAT-" x="10.16" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.89" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1954,6 +2003,30 @@ SS12D00G3 2ポジションSPDT 1P2T 3ピン
 <connect gate="G$1" pin="GND@1" pad="14"/>
 <connect gate="G$1" pin="GND@2" pad="38"/>
 <connect gate="G$1" pin="GND@3" pad="32"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP4056MOD2-TYPE-C" prefix="CHG" uservalue="yes">
+<description>&lt;strong&gt;リチウム電池充電器モジュール Type-C(TP4056)&lt;/strong&gt;
+&lt;p&gt;
+&lt;a href="https://www.amazon.co.jp/gp/product/B07QTQ46XN"&gt;&lt;/a&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TP4056MOD2-TYPE-C" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP4056MOD2-TYPE-C">
+<connects>
+<connect gate="G$1" pin="BAT+" pad="BAT+"/>
+<connect gate="G$1" pin="BAT-" pad="BAT-"/>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
 </connects>
 <technologies>
 <technology name=""/>
