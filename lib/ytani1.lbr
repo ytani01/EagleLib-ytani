@@ -57,8 +57,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -70,6 +74,56 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;a href="https://github.com/ytani01/EagleLib-ytani/"&gt;https://github.com/ytani01/EagleLib-ytani/&lt;/a&gt;</description>
@@ -1071,6 +1125,26 @@
 <smd name="P$16" x="-4.445" y="2.413" dx="1.016" dy="0.508" layer="1" rot="R90"/>
 <circle x="-4.2" y="-1.2" radius="0.2" width="0.1524" layer="21"/>
 <text x="-2.54" y="0" size="1.016" layer="21">CH340G</text>
+<text x="-5.08" y="-3.81" size="1.778" layer="25" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.778" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="ZTT-CERAMIC-RESONATOR">
+<description>Ceramic Resonator
+セラミック発振子　コンデンサー内蔵タイプ
+YIC社 ZTTシリーズ</description>
+<pad name="1" x="-2.54" y="0" drill="0.6"/>
+<pad name="2" x="0" y="0" drill="0.6"/>
+<pad name="3" x="2.54" y="0" drill="0.6"/>
+<text x="-3.81" y="2.54" size="1.778" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.81" y1="-1.016" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="1.27" x2="-3.81" y2="1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.556" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="-1.27" x2="-3.81" y2="-1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -1499,26 +1573,64 @@
 <text x="-7.62" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="CH340G">
-<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.1524" layer="94"/>
-<pin name="GND" x="-12.7" y="10.16" visible="pin" length="middle"/>
-<pin name="TX" x="-12.7" y="7.62" visible="pin" length="middle"/>
-<pin name="RX" x="-12.7" y="5.08" visible="pin" length="middle"/>
-<pin name="V3" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="UD+" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="UD-" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="XI" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="XO" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="CTS#" x="12.7" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="DSR#" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="RI#" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="DCD#" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="DTR#" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="RTS#" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="R232" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="12.7" y="10.16" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.1524" layer="94"/>
+<pin name="GND" x="0" y="-15.24" visible="pin" length="middle" rot="R90"/>
+<pin name="TX" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="V3" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="UD+" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="UD-" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="XI" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="XO" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="CTS#" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="DSR#" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RI#" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="DCD#" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="DTR#" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RTS#" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="R232" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="VCC" x="0" y="17.78" visible="pin" length="middle" rot="R270"/>
+<text x="-15.24" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="13.97" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ZTT-CERAMIC-RESONATOR">
+<wire x1="-5.08" y1="6.35" x2="5.08" y2="6.35" width="0.508" layer="94"/>
+<wire x1="5.08" y1="6.35" x2="5.08" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.508" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="6.35" width="0.508" layer="94"/>
+<pin name="1" x="-7.62" y="2.54" visible="pad" length="short"/>
+<pin name="3" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
+<text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="2" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
+<wire x1="-2.54" y1="2.54" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2103,6 +2215,30 @@ SS12D00G3 2ポジションSPDT 1P2T 3ピン
 <connect gate="G$1" pin="VCC" pad="P$16"/>
 <connect gate="G$1" pin="XI" pad="P$7"/>
 <connect gate="G$1" pin="XO" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZTT-CERAMIC-RESONATOR" prefix="Y" uservalue="yes">
+<description>CERAMIC RESONATOR
+
+セラミック発振子　コンデンサー内蔵タイプ
+
+YIC社
+
+ZTTシリーズ</description>
+<gates>
+<gate name="ZTT" symbol="ZTT-CERAMIC-RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ZTT-CERAMIC-RESONATOR">
+<connects>
+<connect gate="ZTT" pin="1" pad="1"/>
+<connect gate="ZTT" pin="2" pad="2"/>
+<connect gate="ZTT" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
