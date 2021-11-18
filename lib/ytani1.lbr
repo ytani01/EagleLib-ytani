@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -1331,6 +1331,56 @@ YIC社 ZTTシリーズ</description>
 <wire x1="-1.27" y1="0.8" x2="3.81" y2="0.8" width="0.15" layer="21"/>
 <wire x1="3.81" y1="0.8" x2="3.81" y2="1.27" width="0.15" layer="21"/>
 </package>
+<package name="M5STAMP-PICO">
+<description>&lt;h3&gt;M5Stamp Pico&lt;/h3&gt;</description>
+<wire x1="9.017" y1="12.065" x2="9.017" y2="-11.935" width="0.127" layer="21"/>
+<wire x1="9.017" y1="-11.935" x2="-8.983" y2="-11.935" width="0.127" layer="21"/>
+<wire x1="-8.983" y1="-11.935" x2="-8.983" y2="12.065" width="0.127" layer="21"/>
+<wire x1="-8.983" y1="12.065" x2="9.017" y2="12.065" width="0.127" layer="21"/>
+<pad name="GND2" x="7.62" y="-10.16" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="G0" x="7.62" y="-7.62" drill="1" diameter="1.778" rot="R180"/>
+<pad name="EN" x="7.62" y="-5.08" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G3" x="7.62" y="-2.54" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G1" x="7.62" y="0" drill="1" diameter="1.778" rot="R180"/>
+<pad name="3V3" x="7.62" y="2.54" drill="1" diameter="1.778" rot="R180"/>
+<pad name="GND1" x="-7.62" y="-10.16" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="5V1" x="-7.62" y="-7.62" drill="1" diameter="1.778" shape="octagon" rot="R180"/>
+<pad name="G21" x="-7.62" y="0" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G25" x="-7.62" y="-5.08" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G22" x="-7.62" y="-2.54" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G19" x="-7.62" y="2.54" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G18" x="-7.62" y="5.08" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G36" x="-7.62" y="7.62" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G26" x="-7.62" y="10.16" drill="1" diameter="1.778" rot="R180"/>
+<pad name="5V0" x="-1.27" y="-10.16" drill="1" diameter="1.778" shape="octagon" rot="R180"/>
+<pad name="G33" x="3.81" y="-10.16" drill="1" diameter="1.778" rot="R180"/>
+<pad name="G32" x="1.27" y="-10.16" drill="1" diameter="1.778" rot="R180"/>
+<pad name="GND0" x="-3.81" y="-10.16" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<text x="-6.223" y="-10.16" size="0.8128" layer="21" align="center-left">G</text>
+<text x="6.223" y="-10.16" size="0.8128" layer="21" align="center-right">G</text>
+<text x="-4.064" y="-8.89" size="0.8128" layer="21">G</text>
+<text x="6.223" y="-5.08" size="0.8128" layer="21" align="center-right">EN</text>
+<text x="-1.778" y="-8.89" size="0.8128" layer="21">5V</text>
+<text x="-6.223" y="-7.62" size="0.8128" layer="21" align="center-left">5V</text>
+<text x="3.302" y="-8.89" size="0.8128" layer="21">33</text>
+<text x="0.762" y="-8.89" size="0.8128" layer="21">32</text>
+<text x="6.35" y="2.54" size="0.8128" layer="21" align="center-right">3.3V</text>
+<text x="-6.223" y="0" size="0.8128" layer="21" align="center-left">21</text>
+<text x="-6.223" y="-5.08" size="0.8128" layer="21" align="center-left">25</text>
+<text x="-6.223" y="-2.54" size="0.8128" layer="21" align="center-left">22</text>
+<text x="-6.223" y="2.54" size="0.8128" layer="21" align="center-left">19</text>
+<text x="-6.223" y="5.08" size="0.8128" layer="21" align="center-left">18</text>
+<text x="-6.223" y="7.62" size="0.8128" layer="21" align="center-left">36</text>
+<text x="-6.223" y="10.16" size="0.8128" layer="21" align="center-left">26</text>
+<text x="6.223" y="-7.62" size="0.8128" layer="21" align="center-right">0</text>
+<text x="6.223" y="-2.54" size="0.8128" layer="21" align="center-right">3</text>
+<text x="6.223" y="0" size="0.8128" layer="21" align="center-right">1</text>
+<text x="-2.54" y="6.35" size="1.9304" layer="21">M5</text>
+<text x="-2.54" y="5.08" size="0.8128" layer="21">STAMP</text>
+<text x="2.54" y="4.953" size="1.016" layer="21" rot="R90">PICO</text>
+<text x="-3.683" y="2.54" size="0.8128" layer="21" align="center-left">39   BTN</text>
+<circle x="-3.175" y="2.54" radius="1.27" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="FE05-1" urn="urn:adsk.eagle:package:8190/1" type="box">
@@ -1463,7 +1513,7 @@ YIC社 ZTTシリーズ</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="LOLIN-D32">
+<symbol name="LOLIN-D32" urn="urn:adsk.eagle:symbol:30941154/1">
 <description>LOLIN D32</description>
 <pin name="3V3" x="-17.78" y="17.78" length="short" direction="pas"/>
 <pin name="RESET" x="-17.78" y="15.24" length="short" direction="pas"/>
@@ -1504,7 +1554,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="15.24" y1="-21.59" x2="-15.24" y2="-21.59" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-21.59" x2="-15.24" y2="19.05" width="0.254" layer="94"/>
 </symbol>
-<symbol name="CH340G">
+<symbol name="CH340G" urn="urn:adsk.eagle:symbol:30941156/1">
 <wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="94"/>
@@ -1528,7 +1578,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-15.24" y="16.51" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="13.97" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="TP4056MOD2-TYPE-C">
+<symbol name="TP4056MOD2-TYPE-C" urn="urn:adsk.eagle:symbol:30941157/1">
 <pin name="IN+" x="-10.16" y="-2.54" visible="pin" length="short" direction="pas"/>
 <pin name="IN-" x="-10.16" y="-5.08" visible="pin" length="short" direction="pas"/>
 <pin name="OUT+" x="10.16" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
@@ -1542,7 +1592,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-7.62" y="8.89" size="1.27" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="PAM8012MOD">
+<symbol name="PAM8012MOD" urn="urn:adsk.eagle:symbol:30941166/1">
 <pin name="VCC" x="-10.16" y="5.08" visible="pin" length="short" direction="pas"/>
 <pin name="GND" x="-10.16" y="2.54" visible="pin" length="short" direction="pas"/>
 <pin name="IN+" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
@@ -1555,7 +1605,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="8.89" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="ZTT-CERAMIC-RESONATOR">
+<symbol name="ZTT-CERAMIC-RESONATOR" urn="urn:adsk.eagle:symbol:30941155/1">
 <wire x1="-5.08" y1="6.35" x2="5.08" y2="6.35" width="0.508" layer="94"/>
 <wire x1="5.08" y1="6.35" x2="5.08" y2="-5.08" width="0.508" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.508" layer="94"/>
@@ -1591,7 +1641,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-5.08" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SW03">
+<symbol name="SW03" urn="urn:adsk.eagle:symbol:30941164/1">
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
@@ -1603,7 +1653,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <text x="1.27" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="PINHEAD-MA01-1">
+<symbol name="PINHEAD-MA01-1" urn="urn:adsk.eagle:symbol:30941162/1">
 <wire x1="3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
@@ -1613,7 +1663,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-1.27" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="PINHEAD-MA04-1">
+<symbol name="PINHEAD-MA04-1" urn="urn:adsk.eagle:symbol:30941159/1">
 <wire x1="3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
@@ -1629,7 +1679,7 @@ YIC社 ZTTシリーズ</description>
 <pin name="3" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="ESP-32S">
+<symbol name="ESP-32S" urn="urn:adsk.eagle:symbol:30941158/1">
 <pin name="3V3" x="-15.24" y="22.86" length="middle" direction="pas"/>
 <pin name="EN" x="-15.24" y="20.32" length="middle" direction="pas"/>
 <pin name="D36" x="-15.24" y="17.78" length="middle" direction="pas"/>
@@ -1675,7 +1725,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="11.43" y1="-24.13" x2="-11.43" y2="-24.13" width="0.254" layer="94"/>
 <wire x1="-11.43" y1="-24.13" x2="-11.43" y2="24.13" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PINHEAD-MA02-1">
+<symbol name="PINHEAD-MA02-1" urn="urn:adsk.eagle:symbol:30941161/1">
 <wire x1="3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="5.08" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
@@ -1687,7 +1737,7 @@ YIC社 ZTTシリーズ</description>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="DCDC04">
+<symbol name="DCDC04" urn="urn:adsk.eagle:symbol:30941171/1">
 <pin name="VIN+" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
 <pin name="VOUT+" x="12.7" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VIN-" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
@@ -1699,7 +1749,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="10.16" y1="-3.81" x2="-10.16" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="-10.16" y1="-3.81" x2="-10.16" y2="3.81" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="28BYJ-48-5V">
+<symbol name="28BYJ-48-5V" urn="urn:adsk.eagle:symbol:30941163/1">
 <pin name="RED" x="-1.27" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="ORANGE" x="-1.27" y="2.54" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="YELLOW" x="-1.27" y="0" visible="pin" length="short" direction="pas" function="dot"/>
@@ -1712,7 +1762,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-3.81" y="8.89" size="1.27" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="PINHEAD-MA03-1">
+<symbol name="PINHEAD-MA03-1" urn="urn:adsk.eagle:symbol:30941160/1">
 <wire x1="3.81" y1="-2.54" x2="-1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
@@ -1726,7 +1776,7 @@ YIC社 ZTTシリーズ</description>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="DRV8835MOD">
+<symbol name="DRV8835MOD" urn="urn:adsk.eagle:symbol:30941168/1">
 <pin name="VCC" x="-10.16" y="7.62" visible="pin" length="short" direction="in"/>
 <pin name="BOUT2" x="12.7" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="BOUT1" x="12.7" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
@@ -1745,7 +1795,7 @@ YIC社 ZTTシリーズ</description>
 <wire x1="-7.62" y1="-15.24" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="11.43" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="CON02">
+<symbol name="CON02" urn="urn:adsk.eagle:symbol:30941165/1">
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
@@ -1755,7 +1805,7 @@ YIC社 ZTTシリーズ</description>
 <pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
-<symbol name="DCDC03">
+<symbol name="DCDC03" urn="urn:adsk.eagle:symbol:30941167/1">
 <wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
@@ -1766,7 +1816,7 @@ YIC社 ZTTシリーズ</description>
 <pin name="VIN" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
 <pin name="GND" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
-<symbol name="RPI-PIN">
+<symbol name="RPI-PIN" urn="urn:adsk.eagle:symbol:30941172/1">
 <pin name="3V3@1" x="-22.86" y="17.78" length="middle" direction="pas"/>
 <pin name="GPIO2(SDA)" x="-22.86" y="15.24" length="middle" direction="pas"/>
 <pin name="GPIO3(SCL)" x="-22.86" y="12.7" length="middle" direction="pas"/>
@@ -1878,7 +1928,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-20.32" y="21.59" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="TP4056MOD1">
+<symbol name="TP4056MOD1" urn="urn:adsk.eagle:symbol:30941169/1">
 <pin name="IN+" x="-10.16" y="-2.54" visible="pin" length="short" direction="pas"/>
 <pin name="IN-" x="-10.16" y="-5.08" visible="pin" length="short" direction="pas"/>
 <pin name="OUT+" x="10.16" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
@@ -1892,7 +1942,7 @@ YIC社 ZTTシリーズ</description>
 <text x="-7.62" y="8.89" size="1.27" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="OLED-I2C-0.96">
+<symbol name="OLED-I2C-0.96" urn="urn:adsk.eagle:symbol:30941170/1">
 <pin name="GND" x="-7.62" y="-5.08" visible="pin" length="short" function="dot"/>
 <pin name="VCC" x="-7.62" y="2.54" visible="pin" length="short" function="dot"/>
 <pin name="SCL" x="-7.62" y="0" visible="pin" length="short" function="dot"/>
@@ -1974,9 +2024,35 @@ ex.
 <circle x="0" y="-5.08" radius="0.2" width="0.15" layer="94"/>
 <circle x="0" y="-5.08" radius="0.1" width="0.15" layer="94"/>
 </symbol>
+<symbol name="M5STAMP-PICO">
+<description>&lt;h3&gt;M5Stamp Pico&lt;/h3&gt;</description>
+<wire x1="-22.86" y1="-7.62" x2="-22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-22.86" y2="-7.62" width="0.254" layer="94"/>
+<pin name="G26-MOSI-DAC2" x="-25.4" y="10.16" length="short"/>
+<pin name="G36-MISO-ADC" x="-25.4" y="7.62" length="short"/>
+<pin name="G18-SCK" x="-25.4" y="5.08" length="short"/>
+<pin name="G19-CS" x="-25.4" y="2.54" length="short"/>
+<pin name="G21-SDA" x="-25.4" y="0" length="short"/>
+<pin name="G22-SCL" x="-25.4" y="-2.54" length="short"/>
+<pin name="G25-DAC1" x="-25.4" y="-5.08" length="short"/>
+<pin name="G33-ADC" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="G32-ADC" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="G0" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="G3-RX" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="G1-TX" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="GND0" x="-7.62" y="-10.16" length="short" rot="R90"/>
+<pin name="EN" x="5.08" y="15.24" length="short" rot="R270"/>
+<pin name="3.3V" x="2.54" y="15.24" length="short" rot="R270"/>
+<pin name="5V0" x="-2.54" y="15.24" length="short" rot="R270"/>
+<pin name="GND1" x="-5.08" y="-10.16" length="short" rot="R90"/>
+<pin name="GND2" x="-2.54" y="-10.16" length="short" rot="R90"/>
+<pin name="5V1" x="0" y="15.24" length="short" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LOLIN-D32" prefix="ESP" uservalue="yes">
+<deviceset name="LOLIN-D32" urn="urn:adsk.eagle:component:30941194/1" prefix="ESP" uservalue="yes">
 <description>&lt;p&gt;LOLIN D32 V1.0.0&lt;/p&gt;
 &lt;p&gt;ESP32 LiPo battery&lt;/p&gt;</description>
 <gates>
@@ -2027,7 +2103,7 @@ ex.
 </device>
 </devices>
 </deviceset>
-<deviceset name="ZTT-CERAMIC-RESONATOR" prefix="Y" uservalue="yes">
+<deviceset name="ZTT-CERAMIC-RESONATOR" urn="urn:adsk.eagle:component:30941195/1" prefix="Y" uservalue="yes">
 <description>CERAMIC RESONATOR
 
 セラミック発振子　コンデンサー内蔵タイプ
@@ -2054,7 +2130,7 @@ ZTTシリーズ</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP4056MOD2-TYPE-C" prefix="CHG" uservalue="yes">
+<deviceset name="TP4056MOD2-TYPE-C" urn="urn:adsk.eagle:component:30941197/1" prefix="CHG" uservalue="yes">
 <description>&lt;strong&gt;リチウム電池充電器モジュール Type-C(TP4056)&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/gp/product/B07QTQ46XN"&gt;&lt;/a&gt;
@@ -2081,7 +2157,7 @@ ZTTシリーズ</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SW3-1" prefix="SW" uservalue="yes">
+<deviceset name="SW3-1" urn="urn:adsk.eagle:component:30941203/1" prefix="SW" uservalue="yes">
 <description>&lt;strong&gt;Slide Switch 3x1 pin &lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/gp/product/B01LYVYQNO/"&gt;https://www.amazon.co.jp/gp/product/B01LYVYQNO/&lt;/a&gt;
@@ -2111,7 +2187,7 @@ SS12D00G3 2ポジションSPDT 1P2T 3ピン
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD-MA01-1" uservalue="yes">
+<deviceset name="PINHEAD-MA01-1" urn="urn:adsk.eagle:component:30941202/1" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PINHEAD-MA01-1" x="0" y="0"/>
 </gates>
@@ -2129,7 +2205,7 @@ SS12D00G3 2ポジションSPDT 1P2T 3ピン
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD-MA04-1" prefix="SV" uservalue="yes">
+<deviceset name="PINHEAD-MA04-1" urn="urn:adsk.eagle:component:30941199/1" prefix="SV" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="PINHEAD-MA04-1" x="0" y="0"/>
@@ -2157,7 +2233,7 @@ SS12D00G3 2ポジションSPDT 1P2T 3ピン
 </device>
 </devices>
 </deviceset>
-<deviceset name="PAM8012MOD" prefix="AMP" uservalue="yes">
+<deviceset name="PAM8012MOD" urn="urn:adsk.eagle:component:30941204/1" prefix="AMP" uservalue="yes">
 <description>&lt;strong&gt;PAM8012使用2W D級アンプモジュール&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://akizukidenshi.com/catalog/g/gK-08217/"&gt;https://akizukidenshi.com/catalog/g/gK-08217/&lt;/a&gt;
@@ -2212,7 +2288,7 @@ IN-をGNDに接続することでシングルエンド入力としても使用�
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESP-32S" prefix="ESP" uservalue="yes">
+<deviceset name="ESP-32S" urn="urn:adsk.eagle:component:30941198/1" prefix="ESP" uservalue="yes">
 <description>&lt;p&gt;ESP 32S&lt;/p&gt;
 &lt;p&gt;ESP32 DevKitC&lt;/p&gt;</description>
 <gates>
@@ -2269,7 +2345,7 @@ IN-をGNDに接続することでシングルエンド入力としても使用�
 </device>
 </devices>
 </deviceset>
-<deviceset name="CH340G" prefix="UART">
+<deviceset name="CH340G" urn="urn:adsk.eagle:component:30941196/1" prefix="UART">
 <gates>
 <gate name="G$1" symbol="CH340G" x="-1.27" y="-1.27"/>
 </gates>
@@ -2302,7 +2378,7 @@ IN-をGNDに接続することでシングルエンド入力としても使用�
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD-MA02-1" prefix="SV" uservalue="yes">
+<deviceset name="PINHEAD-MA02-1" urn="urn:adsk.eagle:component:30941201/1" prefix="SV" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="PINHEAD-MA02-1" x="0" y="0"/>
@@ -2322,7 +2398,7 @@ IN-をGNDに接続することでシングルエンド入力としても使用�
 </device>
 </devices>
 </deviceset>
-<deviceset name="28BYJ-48-5V" prefix="SMTR" uservalue="yes">
+<deviceset name="28BYJ-48-5V" urn="urn:adsk.eagle:component:30941206/1" prefix="SMTR" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="28BYJ-48-5V" x="0" y="0"/>
 </gates>
@@ -2344,7 +2420,7 @@ IN-をGNDに接続することでシングルエンド入力としても使用�
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCDC-SX1308-MOD1" prefix="DCDC" uservalue="yes">
+<deviceset name="DCDC-SX1308-MOD1" urn="urn:adsk.eagle:component:30941193/1" prefix="DCDC" uservalue="yes">
 <description>&lt;strong&gt;DC/DC Step-Up converter MT3608&lt;/strong&gt;
 &lt;p&gt;
 &lt;ul&gt;
@@ -2385,7 +2461,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="RPI-PIN" prefix="RPI" uservalue="yes">
+<deviceset name="RPI-PIN" urn="urn:adsk.eagle:component:30941208/1" prefix="RPI" uservalue="yes">
 <description>&lt;strong&gt;Raspberry Pi pin header&lt;/strong&gt;</description>
 <gates>
 <gate name="G$1" symbol="RPI-PIN" x="-17.78" y="-12.7"/>
@@ -2443,7 +2519,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD-MA03-1" prefix="SV" uservalue="yes">
+<deviceset name="PINHEAD-MA03-1" urn="urn:adsk.eagle:component:30941200/1" prefix="SV" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="PINHEAD-MA03-1" x="0" y="0"/>
@@ -2470,7 +2546,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST-PH2" prefix="P" uservalue="yes">
+<deviceset name="JST-PH2" urn="urn:adsk.eagle:component:30941205/1" prefix="P" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CON02" x="0" y="0"/>
 </gates>
@@ -2489,7 +2565,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="DRV8835MOD" prefix="MD" uservalue="yes">
+<deviceset name="DRV8835MOD" urn="urn:adsk.eagle:component:30941209/1" prefix="MD" uservalue="yes">
 <description>&lt;strong&gt;DRV8835 Motor Driver Module&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://akizukidenshi.com/catalog/g/gK-09848/"&gt;https://akizukidenshi.com/catalog/g/gK-09848/&lt;/a&gt;
@@ -2532,7 +2608,7 @@ Vin = 0V-Vcc &lt;br /&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCDC-5V-0.48A" prefix="DCDC" uservalue="yes">
+<deviceset name="DCDC-5V-0.48A" urn="urn:adsk.eagle:component:30941207/1" prefix="DCDC" uservalue="yes">
 <description>&lt;strong&gt;DC-DC step up converter T64&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/gp/product/B07N8TBJB3/"&gt;https://www.amazon.co.jp/gp/product/B07N8TBJB3/&lt;/a&gt;
@@ -2577,7 +2653,7 @@ Vout: 5V&lt;br /&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP4056MOD1" prefix="CHG" uservalue="yes">
+<deviceset name="TP4056MOD1" urn="urn:adsk.eagle:component:30941211/1" prefix="CHG" uservalue="yes">
 <description>&lt;strong&gt;LiPoバッテリー充電コントローラ(TP4056)&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://www.amazon.co.jp/dp/B073J66H62/"&gt;https://www.amazon.co.jp/dp/B073J66H62/&lt;/a&gt;
@@ -2606,7 +2682,7 @@ Vout: 5V&lt;br /&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DCDC-MT3608-MOD" prefix="DCDC" uservalue="yes">
+<deviceset name="DCDC-MT3608-MOD" urn="urn:adsk.eagle:component:30941210/1" prefix="DCDC" uservalue="yes">
 <description>&lt;strong&gt;DC/DC Step-Up converter MT3608&lt;/strong&gt;
 &lt;p&gt;
 &lt;ul&gt;
@@ -2664,7 +2740,7 @@ Max: 2A (1A recomended)
 </device>
 </devices>
 </deviceset>
-<deviceset name="OLED-SSD1306-0.96" prefix="OLED">
+<deviceset name="OLED-SSD1306-0.96" urn="urn:adsk.eagle:component:30941212/1" prefix="OLED">
 <description>&lt;strong&gt;OLED SSD1306 0.96inch 128x96 I2C&lt;/strong&gt;
 &lt;p&gt;
 &lt;a href="https://akizukidenshi.com/catalog/g/gP-12031/"&gt;https://akizukidenshi.com/catalog/g/gP-12031/&lt;/a&gt;
@@ -2734,6 +2810,42 @@ Blank/White
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M5STAMP-PICO" prefix="M5PICO">
+<description>&lt;h3&gt;M5Stamp Pico&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="M5STAMP-PICO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M5STAMP-PICO">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3V3"/>
+<connect gate="G$1" pin="5V0" pad="5V0"/>
+<connect gate="G$1" pin="5V1" pad="5V1"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="G0" pad="G0"/>
+<connect gate="G$1" pin="G1-TX" pad="G1"/>
+<connect gate="G$1" pin="G18-SCK" pad="G18"/>
+<connect gate="G$1" pin="G19-CS" pad="G19"/>
+<connect gate="G$1" pin="G21-SDA" pad="G21"/>
+<connect gate="G$1" pin="G22-SCL" pad="G22"/>
+<connect gate="G$1" pin="G25-DAC1" pad="G25"/>
+<connect gate="G$1" pin="G26-MOSI-DAC2" pad="G26"/>
+<connect gate="G$1" pin="G3-RX" pad="G3"/>
+<connect gate="G$1" pin="G32-ADC" pad="G32"/>
+<connect gate="G$1" pin="G33-ADC" pad="G33"/>
+<connect gate="G$1" pin="G36-MISO-ADC" pad="G36"/>
+<connect gate="G$1" pin="GND0" pad="GND0"/>
+<connect gate="G$1" pin="GND1" pad="GND2"/>
+<connect gate="G$1" pin="GND2" pad="GND1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="URL" value="https://shop.m5stack.com/collections/m5stack-new-arrival/products/m5stamp-pico-mate-with-pin-headers?variant=40279458840748" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
