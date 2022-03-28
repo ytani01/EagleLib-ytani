@@ -11779,12 +11779,12 @@ SOP8 ちょっと幅広</description>
 <pad name="CC1" x="1.27" y="-13.97" drill="0.9"/>
 <pad name="GND" x="3.81" y="-13.97" drill="0.9"/>
 <pad name="VBUS" x="6.35" y="-13.97" drill="0.9"/>
-<hole x="-8.46" y="-5.08" drill="4"/>
-<hole x="8.46" y="-5.08" drill="4"/>
 <wire x1="-4.25" y1="-0.5" x2="4.25" y2="-0.5" width="0.1524" layer="21"/>
 <wire x1="4.25" y1="-0.5" x2="4.25" y2="-8" width="0.1524" layer="21"/>
 <wire x1="4.25" y1="-8" x2="-4.25" y2="-8" width="0.1524" layer="21"/>
 <wire x1="-4.25" y1="-8" x2="-4.25" y2="-0.5" width="0.1524" layer="21"/>
+<circle x="-8.46" y="-5.08" radius="2" width="0.1524" layer="21"/>
+<circle x="8.46" y="-5.08" radius="2" width="0.1524" layer="21"/>
 </package>
 </packages>
 <packages3d>
