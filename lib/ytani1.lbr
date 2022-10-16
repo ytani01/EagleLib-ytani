@@ -12556,16 +12556,16 @@ ex.
 &lt;li&gt;WS2812&lt;/li&gt;
 &lt;li&gt;SK6812&lt;/li&gt;
 &lt;/ul&gt;</description>
-<pin name="VDD" x="0" y="10.16" visible="pad" length="short" rot="R270"/>
-<pin name="GND" x="0" y="-10.16" visible="pad" length="short" rot="R90"/>
-<pin name="DOUT" x="12.7" y="0" visible="pad" length="short" rot="R180"/>
-<pin name="DIN" x="-10.16" y="0" visible="pad" length="short"/>
-<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
-<text x="2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDD" x="5.08" y="10.16" visible="pin" length="short" rot="R270"/>
+<pin name="GND" x="-5.08" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="DOUT" x="10.16" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="DIN" x="-10.16" y="5.08" visible="pin" length="short" direction="in"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.508" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.508" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.508" layer="94"/>
+<text x="-7.62" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
