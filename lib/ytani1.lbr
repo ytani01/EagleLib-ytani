@@ -11870,7 +11870,7 @@ SOP8 ちょっと幅広</description>
 <wire x1="-4" y1="13" x2="-4" y2="10" width="0.1524" layer="21"/>
 <wire x1="4" y1="10" x2="4" y2="13" width="0.1524" layer="21"/>
 <wire x1="4" y1="13" x2="-4" y2="13" width="0.1524" layer="21"/>
-<pad name="BAT+" x="0" y="12.5" drill="1"/>
+<pad name="BAT+" x="0" y="13" drill="1"/>
 <pad name="BAT-" x="0" y="-7.745" drill="1"/>
 </package>
 <package name="SW-SMD-1">
@@ -11887,6 +11887,23 @@ SOP8 ちょっと幅広</description>
 <wire x1="-0.75" y1="1.25" x2="-0.75" y2="1.875" width="0.1524" layer="21"/>
 <wire x1="-0.75" y1="1.875" x2="0.75" y2="1.875" width="0.1524" layer="21"/>
 <wire x1="0.75" y1="1.875" x2="0.75" y2="1.25" width="0.1524" layer="21"/>
+</package>
+<package name="BAT-CR2032-2">
+<circle x="0" y="-0.254" radius="11.25" width="0.1524" layer="21"/>
+<wire x1="-3" y1="16.57" x2="-3" y2="10.57" width="0.1524" layer="21" style="longdash"/>
+<wire x1="3" y1="10.57" x2="3" y2="16.57" width="0.1524" layer="21"/>
+<wire x1="3" y1="16.57" x2="-3" y2="16.57" width="0.1524" layer="21" style="longdash"/>
+<pad name="BAT+" x="0" y="13.158" drill="1"/>
+<pad name="BAT-" x="0" y="-5.93" drill="1"/>
+<wire x1="-1.5" y1="13.57" x2="1.5" y2="13.57" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="13.57" x2="1.5" y2="-6.43" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-6.43" x2="-1.5" y2="-6.43" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-6.43" x2="-1.5" y2="13.57" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="7.62" x2="1.27" y2="7.62" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-3.81" width="0.1524" layer="21"/>
+</package>
+<package name="PAD-10X3">
+<smd name="P$1" x="0" y="0" dx="10" dy="3" layer="1"/>
 </package>
 </packages>
 <packages3d>
@@ -13633,7 +13650,7 @@ Blank/White
 <technology name=""/>
 </technologies>
 </device>
-<device name="150X50" package="PAD5X15">
+<device name="_15X5" package="PAD5X15">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -13641,7 +13658,15 @@ Blank/White
 <technology name=""/>
 </technologies>
 </device>
-<device name="12X4" package="PAD-12X4">
+<device name="_12X4" package="PAD-12X4">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_10X3" package="PAD-10X3">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -13656,7 +13681,16 @@ Blank/White
 <gate name="G$1" symbol="BATTERY-1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BAT-CR2032-1">
+<device name="A" package="BAT-CR2032-1">
+<connects>
+<connect gate="G$1" pin="BAT+" pad="BAT+"/>
+<connect gate="G$1" pin="P$1" pad="BAT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="BAT-CR2032-2">
 <connects>
 <connect gate="G$1" pin="BAT+" pad="BAT+"/>
 <connect gate="G$1" pin="P$1" pad="BAT-"/>
