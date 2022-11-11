@@ -11905,6 +11905,20 @@ SOP8 ちょっと幅広</description>
 <package name="PAD-10X3">
 <smd name="P$1" x="0" y="0" dx="10" dy="3" layer="1"/>
 </package>
+<package name="WS2812B">
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.1524" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.1524" layer="21"/>
+<smd name="IN" x="2.5" y="1.9" dx="2" dy="1.3" layer="1"/>
+<wire x1="-2.5" y1="-2.5" x2="1.5" y2="-2.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-1.5" x2="2.5" y2="2.5" width="0.1524" layer="21"/>
+<wire x1="2.5" y1="-1.5" x2="1.5" y2="-2.5" width="0.1524" layer="21"/>
+<smd name="GND" x="2.5" y="-1.9" dx="2" dy="1.3" layer="1"/>
+<smd name="VDD" x="-2.5" y="1.9" dx="2" dy="1.3" layer="1"/>
+<smd name="OUT" x="-2.5" y="-1.9" dx="2" dy="1.3" layer="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="FE05-1" urn="urn:adsk.eagle:package:8190/1" type="box">
@@ -13619,15 +13633,26 @@ Blank/White
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK6812MINI-E" prefix="SK">
+<deviceset name="NEOPIXEL" prefix="NP">
 <gates>
 <gate name="G$1" symbol="NEOPIXEL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SK6812MINI-E">
+<device name="SK6812MINI-E" package="SK6812MINI-E">
 <connects>
 <connect gate="G$1" pin="DIN" pad="DIN"/>
 <connect gate="G$1" pin="DOUT" pad="DOUT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WS2812B" package="WS2812B">
+<connects>
+<connect gate="G$1" pin="DIN" pad="IN"/>
+<connect gate="G$1" pin="DOUT" pad="OUT"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
