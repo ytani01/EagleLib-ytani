@@ -31,4 +31,4 @@ if [ ! -f $DST_LIB ]; then
     exit 1
 fi
 
-diff -u --color ${SRC_LIB} ${DST_LIB}
+cp -ivp ${DST_LIB} ${SRC_LIB} 
