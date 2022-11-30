@@ -6,7 +6,7 @@ MYNAME=`basename $0`
 
 FNAME="ytani1.lbr"
 SRC_LIB="./lib/${FNAME}"
-DST_LIB="/mnt/c/Users/$USER/Documents/EAGLE/libraries/$FNAME"
+DST_LIB="/mnt/c/Users/$USER/Documents/EAGLE/libraries/ytani/$FNAME"
 
 usage () {
     echo "usage: $MYNAME USER"
